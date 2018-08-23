@@ -1,0 +1,9 @@
+<h4>Your order was successful!</h4>
+<p>Total: £<%= @new_order.total() %></p>
+<p>Your order will be ready to collect in 30 - 45 minutes</p>
+
+
+<ul>
+  <li> <%= @new_order.pretty_name %>: <%= @new_order.quantity %> <%= @new_order.topping %> </li>
+  <li> Cost: £<%= @new_order.quantity * @new_order.price%> </li>
+</ul>

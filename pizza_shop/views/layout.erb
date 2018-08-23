@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pizza Shop</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/reset.css">
+  </head>
+  <body>
+    <section class="wrapper">
+
+    <header align="center"><h1>
+      Punter's Pizzeria
+    </h1></header>
+    <nav>
+      <ul>
+        <li>
+          <a href="/pizza-orders" padding: 20px;>All Orders</a>
+        </li>
+        <li>
+          <a href="/pizza-orders/new"> Create Order</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+    <%= yield %>
+  </main>
+  <footer> <font color="white">&copy 2018</footer>
+    </section>
+  </body>
+</html>

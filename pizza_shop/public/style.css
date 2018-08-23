@@ -1,0 +1,38 @@
+body {
+  font-family: verdana;
+}
+
+a {
+  color: red;
+}
+.wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "head head head"
+                       "nav main main"
+                       "nav foot foot";
+  grid-template-rows: 150px;
+}
+
+.wrapper > header {
+  grid-area: head;
+  background-color: lightgreen;
+  font-size: 40px;
+  font-family: arial;
+}
+
+.wrapper > nav {
+  grid-area: nav;
+  background-color: aquamarine;
+}
+
+.wrapper > main {
+  grid-area: main;
+  background-color: lightyellow;
+  padding-left: 40px;
+}
+
+.wrapper > footer {
+  grid-area: foot;
+  background-color: rebeccapurple;
+}
