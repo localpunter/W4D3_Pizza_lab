@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizza Shop</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <section class="wrapper">
+    <header>Tyno's Pizza Shop</header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/pizza-orders">All Orders</a>
+        </li>
+        <li>
+          <a href="/pizza-orders/new">Create Order</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+        <%= yield %>
+    </main>
+
+    <footer>&copy 2018</footer>
+  </section>
+</body>
+</html>
